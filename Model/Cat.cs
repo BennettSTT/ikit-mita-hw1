@@ -13,7 +13,7 @@ namespace Model
             Age = age;
             _health = 5;
             Color = new CatColor();
-        }
+        } 
 
         private int _health;
         private string _name;
@@ -22,7 +22,7 @@ namespace Model
         public CatColor Color { get; set; }
         public string Name
         {
-            get { return _name ?? "У вашей кошки нету имени"; }
+            get => _name ?? "У вашей кошки нету имени";
             set
             {
                 if (string.IsNullOrEmpty(_name))
@@ -31,7 +31,7 @@ namespace Model
         }
         public string CurrentColor
         {
-            get { return _health >= 5 ? CurrentColor = Color.HeathyColor : CurrentColor = Color.SickColor; }
+            get => _health >= 5 ? CurrentColor = Color.HeathyColor : CurrentColor = Color.SickColor;
             set
             {
                 if (_health >= 5)
