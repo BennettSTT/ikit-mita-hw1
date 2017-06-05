@@ -18,7 +18,7 @@ namespace Model
         private int _health;
         private string _name;
 
-        public readonly string Age;
+        public string Age { get; }
         public CatColor Color { get; set; }
         public string Name
         {
